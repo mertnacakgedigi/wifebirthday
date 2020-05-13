@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(255,181,32);
+
+}
+
+h2{
+  font-size : 40px;
+}
+
+
+.deck {
+    background-color: rgb(182,0,74);
+    margin : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:800px;
+    width: 900px;
+    flex-wrap: wrap;
+    padding: 0px;
+    position: fixed;
+    right :0 ;
+    top: 0;
+
+}
+   
+
+
+
+#header {
+   position: fixed; 
+   color:rgb(255,80,90);
+   left: 25px;
+   top: 120px;
+   font-size: 25px;
+   font-family: 'Sunshiney', cursive;
+  
+}
+
+.icon {
+    font-size: 100px;
+    text-justify: center;
+}
+
+
+.img {
+    color: purple}
+
+p {
+    margin: 0px 0 0 0;
+    font-size: 35px;
+    color: purple;
+    display: none;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    color-adjust: white;
+    display: none;
+    
+ 
+}
+
+
+
+.image1{
+  -webkit-transform:rotate(90deg);
+}
+
+
+
+.card {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  snow;
+    width: 205px;
+    height: 205px;
+    border: 5px solid black;
+    margin: 5px;
+    padding: 0;
+
+
+}
+
+
+#restartgame{
+    background-color:rgb(255,181,32);
+    color: rgb(255,80,90);
+    font-size: 20px;
+    position: fixed;
+    bottom : 275px;
+    left :300px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 4px;
+    border: purple;
+}
+
+#restartgame:hover {background-color:  slateblue}
+
+#restartEnd {
+    background-color: purple;
+    color: white;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 4px;
+    border: purple;
+
+}
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: purple;
+  font-family:  'Bree Serif', serif;
+  padding: 0;
+  margin: 0;
+}
+
+#move {
+  font-family: 'Sunshiney', cursive;
+  font-size: 25px
+}
+
+
+  
+  .overlay-text.visible {
+    padding: 0;
+  margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: overlay-grow 500ms forwards;
+  }
+  
+  @keyframes overlay-grow {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 0;
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0.9);
+      font-size: 3em;
+    }
+  }
+
+  #slm {
+    font-size: 100px;
+    left: 240px;
+    position: fixed;
+    top:30px
+  }
+
+  #ask{
+    font-size: 100px;
+    left: 240px;
+    position: fixed;
+    bottom:100px
+
+  }
